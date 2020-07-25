@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// Messages layout
+// -----------------------------------------------------------------------------
+
+.messages {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.messages__title {
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: $bp-large) {
+  .messages {
+    text-align: left;
+  }
+}

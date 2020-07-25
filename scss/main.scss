@@ -15,7 +15,5 @@
 
 // 5. Layout-related sections
 @import 'layout/navbar', 'layout/hero', 'layout/services', 'layout/company',
-  'layout/blog', 'layout/gallery', 'layout/contact', 'layout/footer';
-
-// 6. Page-specific styles
-@import 'pages/home';
+  'layout/blog', 'layout/gallery', 'layout/contact', 'layout/messages',
+  'layout/footer';

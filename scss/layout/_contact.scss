@@ -33,6 +33,10 @@
   margin: 0 auto 4rem;
 }
 
+.form__error {
+  color: $red;
+}
+
 ::placeholder {
   font-size: 16px;
   font-weight: 600;
