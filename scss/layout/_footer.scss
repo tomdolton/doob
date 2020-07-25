@@ -26,6 +26,11 @@
 
   .menu__link {
     color: $white;
+
+    &:hover {
+      color: $red;
+      transition: $transition;
+    }
   }
 }
 
@@ -41,5 +46,13 @@
 
   svg {
     width: 37px;
+
+    &:hover path {
+      fill: $red;
+      transition: $transition;
+    }
+  }
+
+  path {
   }
 }

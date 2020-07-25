@@ -52,12 +52,15 @@
 
 .card--link {
   padding-top: 3rem;
+
+  // transition: 1s background-color ease;
 }
 
 .card--link:hover {
   cursor: pointer;
   background: $red;
   color: $white;
+  transition: 220ms background-color ease-in-out;
 
   & .card__title--small,
   & .card__date,

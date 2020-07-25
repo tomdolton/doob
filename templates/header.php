@@ -23,19 +23,19 @@
       <img src="./images/logo.png" alt="Doob" class="navbar__logo navbar__logo--desktop" />
       <ul class="navbar__menu menu">
         <li class="menu__item">
-          <a href="/" class="menu__link">Home.</a>
+          <a href="/" class="menu__link link--animated">Home.</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">About us.</a>
+          <a href="#" class="menu__link link--animated">About us.</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Portfolio.</a>
+          <a href="#" class="menu__link link--animated">Portfolio.</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Blog.</a>
+          <a href="#" class="menu__link link--animated">Blog.</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Contact us.</a>
+          <a href="#" class="menu__link link--animated">Contact us.</a>
         </li>
       </ul>
       <a href="#contact" class="navbar__btn btn btn--contact">

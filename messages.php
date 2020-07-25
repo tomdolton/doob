@@ -3,6 +3,9 @@
 // Database connection
 include('config/db_connect.php');
 
+// Handle form submission. Validatates and saves to database
+include('handle_form.php');
+
 // Write query for all contact entries
 $sql = 'SELECT email, subject, message, created_at FROM contact ORDER BY created_at';
 
@@ -45,6 +48,8 @@ mysqli_close($conn);
     <?php endforeach; ?>
 
   </section>
+
+  <?php include('templates/contact.php'); ?>
 
 </main>
 

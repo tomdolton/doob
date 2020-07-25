@@ -42,7 +42,7 @@ if (isset($_POST['submit'])) {
     // Save to db and check
     if (mysqli_query($conn, $sql)) {
       // Success, redirect to index page
-      header('Location: index.php');
+      header('Location: ' . $_SERVER['REQUEST_URI']);
     } else {
       // Error
       echo 'query error: ' . mysqli_error($conn);
