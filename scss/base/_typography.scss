@@ -1,0 +1,79 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $blue-dark;
+  font-family: $font-family;
+  font-size: 18px;
+}
+
+h1,
+h3,
+h4,
+h5,
+a {
+  color: $blue-dark;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 73.5px;
+  line-height: 95.5px;
+}
+
+h2 {
+  color: $red;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20.75px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 48.5px;
+  line-height: 60px;
+}
+
+h4 {
+  font-size: 27.5px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+p {
+  line-height: 30px;
+}
+
+a,
+small,
+h2,
+h5 {
+  line-height: 20.75px;
+}
+
+small {
+  font-size: 14px;
+}
+
+@media (max-width: $bp-medium) {
+  body {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 65px;
+  }
+
+  h3 {
+    font-size: 41px;
+    line-height: 50px;
+  }
+
+  p {
+    line-height: 25.5px;
+  }
+}

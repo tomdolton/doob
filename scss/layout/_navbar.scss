@@ -1,0 +1,142 @@
+// -----------------------------------------------------------------------------
+// Navbar layout
+// -----------------------------------------------------------------------------
+
+//
+// Base styles
+// ==========================================================================
+.navbar {
+  @include flex;
+  padding: 2rem 1rem;
+  text-align: left;
+}
+
+.navbar__logo {
+  min-width: 69px;
+  margin: 0 auto;
+}
+
+.navbar__logo--desktop {
+  display: none;
+}
+
+//
+// Mobile pull out nav
+// ==========================================================================
+
+.navbar__inner {
+  @include flex($direction: column, $align: flex-start);
+
+  position: absolute;
+  top: 112px;
+  left: -100%;
+  bottom: 0;
+  z-index: 999;
+
+  padding: 3rem;
+
+  background: $blue-dark;
+
+  transform: translateX(0);
+  transition: $transition;
+
+  &--active {
+    transform: translateX(100%);
+  }
+}
+
+.navbar__menu {
+  .menu__item {
+    margin-bottom: 2rem;
+  }
+
+  .menu__link {
+    color: $white;
+    font-size: 27.5px;
+  }
+
+  .hamburger {
+    display: inline-block;
+  }
+}
+
+//
+// Large screens
+// ==========================================================================
+
+@media (min-width: $bp-large) {
+  .navbar {
+    display: block;
+
+    padding: 4rem 0;
+  }
+
+  .navbar__logo {
+    margin: 0 4.5rem 0 0;
+  }
+
+  .navbar__logo--mobile {
+    display: none;
+  }
+
+  .navbar__logo--desktop {
+    display: block;
+  }
+
+  .navbar__inner {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: static;
+    padding: 0 2rem;
+
+    background: transparent;
+
+    transition: none;
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navbar__menu {
+    margin-bottom: 0;
+
+    .menu__item {
+      margin-bottom: 0;
+    }
+
+    .menu__link {
+      color: inherit;
+      font-size: inherit;
+    }
+  }
+
+  .navbar__btn {
+    margin-left: auto;
+  }
+}
+
+// Logo placement when viewport exceeds container size
+@media (min-width: 1500px) {
+  .navbar__inner {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .navbar__logo {
+    position: absolute;
+    margin: 1rem 0 0;
+    top: 0;
+    left: -6vw;
+    // bottom: 0;
+  }
+}
+
+@media (min-width: 1650px) {
+  .navbar__logo {
+    left: -9vw;
+  }
+}

@@ -1,0 +1,68 @@
+// -----------------------------------------------------------------------------
+// Company layout
+// -----------------------------------------------------------------------------
+
+.company {
+  position: relative;
+  padding-bottom: 9rem;
+}
+
+.company__textbox {
+  max-width: 420px;
+  margin: 0 auto 4rem;
+}
+
+.company__subtitle,
+.company__copy {
+  margin-bottom: 3rem;
+}
+
+.company__inner {
+  position: relative;
+}
+
+.company__image {
+  width: 60%;
+}
+
+// Background pattern
+.company::after {
+  content: url('../../images/bg-shape-3.png');
+  position: absolute;
+  top: -300px;
+  right: 0;
+  z-index: -1;
+}
+
+//
+// Medium screens
+// ==========================================================================
+
+@media (min-width: $bp-medium) {
+  .company__textbox {
+    max-width: 530px;
+  }
+}
+
+//
+// Large screens
+// ==========================================================================
+
+@media (min-width: $bp-large) {
+  .company {
+    text-align: left;
+  }
+
+  .company__textbox {
+    margin-right: 0;
+    max-width: 570px;
+  }
+
+  .company__image {
+    position: absolute;
+    right: 730px;
+    top: -35px;
+    width: 627px;
+    max-width: 627px;
+  }
+}

@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------------
+// Application-wide Sass/CSS variables.
+// -----------------------------------------------------------------------------
+
+// Regular font family
+$font-family: 'Work Sans', sans-serif;
+
+// Colours
+$blue-dark: hsl(226, 46%, 35%);
+$blue-light: hsl(204, 83%, 98%);
+$red: hsl(356, 94%, 60%);
+$grey: hsl(208, 6%, 46%);
+$white: hsl(0, 0%, 100%);
+
+// Container's maximum width (+ L & R padding on large screens)
+$max-width: calc(1170px + 4rem);
+
+// Breakpoints
+$bp-small: 320px;
+$bp-medium: 768px;
+$bp-large: 1024px;
+$bp-xlarge: 1220px;
+
+$box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+
+$transition: 220ms all ease-in-out;

@@ -1,0 +1,45 @@
+// -----------------------------------------------------------------------------
+// Footer styles & layout
+// -----------------------------------------------------------------------------
+
+.footer {
+  background: $blue-dark;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.footer__title {
+  color: $white;
+  margin-bottom: 0.5rem;
+}
+
+.footer__subtitle {
+  color: $red;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.footer__menu {
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto 3rem;
+
+  .menu__link {
+    color: $white;
+  }
+}
+
+.footer__copyright {
+  color: $white;
+}
+
+.footer__socials {
+  @include flex;
+  max-width: 255px;
+
+  margin: 3rem auto 0;
+
+  svg {
+    width: 37px;
+  }
+}

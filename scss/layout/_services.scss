@@ -1,0 +1,71 @@
+// -----------------------------------------------------------------------------
+// Services styles & layout
+// -----------------------------------------------------------------------------
+
+.services {
+  padding-bottom: 5rem;
+}
+
+.services__title {
+  font-size: 38px;
+  max-width: 330px;
+  margin: 0 auto 2.5rem;
+}
+
+.services__btn {
+  margin-bottom: 2.5rem;
+}
+
+.services__card {
+  max-width: 320px;
+}
+
+//
+// Medium screens
+// ==========================================================================
+
+@media (min-width: $bp-medium) {
+  .services .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+
+  .services__textbox {
+    grid-column: 1 / -1;
+  }
+
+  .services__title {
+    font-size: 45px;
+    max-width: 360px;
+  }
+
+  .services__card {
+    justify-self: end;
+    margin: 0;
+  }
+
+  .services__card:last-child {
+    justify-self: start;
+  }
+}
+
+//
+// X-Large screens
+// ==========================================================================
+
+@media (min-width: $bp-xlarge) {
+  .services {
+    text-align: left;
+    padding-bottom: 14rem;
+  }
+
+  .services .container {
+    @include flex;
+  }
+
+  .services__title {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

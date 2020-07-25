@@ -1,0 +1,58 @@
+// -----------------------------------------------------------------------------
+// Card component
+// -----------------------------------------------------------------------------
+
+.card {
+  background: $white;
+  box-shadow: $box-shadow;
+  text-align: left;
+  padding: 2rem 2rem 3rem 2rem;
+  margin: 0 auto 2.5rem;
+}
+
+.card__image {
+  margin-bottom: 3rem;
+}
+
+.card__title {
+}
+
+.card__date {
+  color: $grey;
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.card__copy {
+  font-size: 14px;
+  line-height: 23.5px;
+  margin-top: 1.5rem;
+}
+
+.card--large__copy {
+  font-size: 18px;
+  margin-top: 2.5rem;
+}
+
+.card__link {
+  display: block;
+  float: right;
+  margin-top: 2.5rem;
+}
+
+.card--large {
+  // transition: $transition;
+}
+
+.card--large:hover {
+  cursor: pointer;
+  background: $red;
+  color: $white;
+
+  & .card__title--small,
+  & .card__date,
+  & .card__link path {
+    color: white;
+    fill: $white;
+  }
+}

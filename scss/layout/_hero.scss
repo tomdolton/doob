@@ -1,0 +1,84 @@
+// -----------------------------------------------------------------------------
+// Hero styles & layout
+// -----------------------------------------------------------------------------
+
+.hero {
+  padding-top: 4rem;
+  padding-bottom: 9rem;
+}
+
+.hero__textbox {
+  max-width: 330px;
+  margin: 0 auto 4rem;
+}
+
+.hero__title,
+.hero__copy {
+  margin-bottom: 2.5rem;
+}
+
+.hero__inner {
+  position: relative;
+}
+
+.hero__links .btn:first-child {
+  margin-bottom: 1.5rem;
+}
+
+.hero__image {
+  width: 60%;
+}
+
+// Background pattern
+.hero::after {
+  content: url('../../images/bg-shape-1.png');
+  position: absolute;
+  top: 90px;
+  right: 0;
+  z-index: -1;
+}
+
+//
+// Medium screens
+// ==========================================================================
+@media (min-width: $bp-medium) {
+  .hero__textbox {
+    max-width: 530px;
+  }
+
+  .hero__links .btn:first-child {
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+  }
+}
+
+//
+// Large screens
+// ==========================================================================
+
+@media (min-width: $bp-large) {
+  .hero {
+    text-align: left;
+    padding-top: 11.5rem;
+    padding-bottom: 24rem;
+  }
+  .hero__inner {
+    max-width: 555px;
+  }
+
+  .hero__textbox {
+    margin-left: 0;
+  }
+
+  .hero__image {
+    position: absolute;
+    left: 730px;
+    top: -140px;
+    width: 680px;
+    max-width: 680px;
+  }
+  .hero::after {
+    top: 40px;
+    right: 0;
+  }
+}

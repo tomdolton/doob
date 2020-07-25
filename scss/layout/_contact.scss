@@ -1,0 +1,83 @@
+// -----------------------------------------------------------------------------
+// Contact and form styles & layout
+// -----------------------------------------------------------------------------
+
+.contact {
+  padding-bottom: 4.25rem;
+}
+
+.contact__subtitle {
+  margin-bottom: 2.5rem;
+}
+
+.form__input,
+.form__message {
+  width: 100%;
+  padding-left: 1rem;
+  color: $grey;
+  font-size: 16px;
+  border: none;
+  background: $blue-light;
+  max-width: 570px;
+}
+
+.form__input {
+  display: block;
+  height: 60px;
+  margin: 0 auto 2.25rem;
+}
+
+.form__message {
+  height: 120px;
+  padding: 1rem;
+  margin: 0 auto 4rem;
+}
+
+::placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 1;
+  color: $blue-dark;
+}
+
+//
+// Medium screens
+// ==========================================================================
+
+@media (min-width: $bp-medium) {
+  .form__input,
+  .form__message,
+  ::placeholder {
+    font-size: 18px;
+  }
+}
+
+//
+// Large screens
+// ==========================================================================
+
+@media (min-width: $bp-large) {
+  .contact {
+    text-align: left;
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  .form__message-wrapper,
+  .form__btn {
+    grid-column: 1 / -1;
+  }
+
+  .form__message {
+    max-width: none;
+  }
+
+  .form__btn {
+    width: 197px;
+    justify-self: center;
+  }
+}
