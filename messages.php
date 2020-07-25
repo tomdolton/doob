@@ -37,7 +37,7 @@ mysqli_close($conn);
 
       <div class="card messages__card">
         <h4 class="card__title"><?= htmlspecialchars($entry['subject']); ?></h4>
-        <h5 class="card__title--small"><?= htmlspecialchars($entry['email']); ?></h5>
+        <h5 class="card__title--small card__title--email">From: <?= htmlspecialchars($entry['email']); ?></h5>
         <p class="card__date"><?= date("j F, Y - g:ia", strtotime(htmlspecialchars($entry['created_at']))); ?></p>
         <p class="card__copy"><?= htmlspecialchars($entry['message']); ?></p>
       </div>

@@ -3,11 +3,13 @@
 // -----------------------------------------------------------------------------
 
 .gallery {
+  position: relative;
   padding-bottom: 9rem;
 }
 
 .gallery__title {
-  margin-bottom: 3rem;
+  max-width: 330px;
+  margin: 0 auto 3rem;
 }
 
 .gallery__image {
@@ -27,11 +29,24 @@
   color: $red;
 }
 
+// Background pattern
+.gallery::after {
+  content: url('../images/bg-shape-4.png');
+  position: absolute;
+  top: 70px;
+  left: 0;
+  z-index: -1;
+}
+
 //
 // Medium screens
 // ==========================================================================
 
 @media (min-width: $bp-medium) {
+  .gallery__title {
+    max-width: 400px;
+  }
+
   .gallery__carousel {
     grid-template-columns: 1fr 1fr;
   }
@@ -44,6 +59,7 @@
 @media (min-width: $bp-large) {
   .gallery__title {
     text-align: left;
+    margin-left: 0;
   }
 
   .gallery__carousel {

@@ -3,14 +3,16 @@
     <h2 class="footer__title">Doob</h2>
     <h3 class="footer__subtitle">Creativity Above</h3>
     <ul class="footer__menu menu">
-      <li class="menu__item"><a href="#" class="menu__link">Home.</a></li>
+      <li class="menu__item">
+        <a href="/" class="menu__link">Home.</a></li>
       <li class="menu__item">
         <a href="#" class="menu__link">About us.</a>
       </li>
       <li class="menu__item">
         <a href="#" class="menu__link">Portfolio.</a>
       </li>
-      <li class="menu__item"><a href="#" class="menu__link">Blog.</a></li>
+      <li class="menu__item">
+        <a href="#" class="menu__link">Blog.</a></li>
       <li class="menu__item">
         <a href="#" class="menu__link">Contact us.</a>
       </li>

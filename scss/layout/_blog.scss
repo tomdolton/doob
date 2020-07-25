@@ -3,6 +3,7 @@
 // -----------------------------------------------------------------------------
 
 .blog {
+  position: relative;
   padding-bottom: 10rem;
 }
 
@@ -14,11 +15,35 @@
   max-width: 370px;
 }
 
+// Background pattern
+.blog::after {
+  content: url('../images/bg-shape-5.png');
+  position: absolute;
+  top: 140px;
+  right: 0;
+  z-index: -1;
+}
+
 //
 // Large screens
 // ==========================================================================
+
 @media (min-width: $bp-large) {
+  .blog__cards-carousel {
+    @include flex();
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 756px;
+    margin: 0 auto;
+  }
+}
+
+// When screen is wide enough for three cards on same line
+@media (min-width: 1220px) {
   .blog {
     text-align: left;
+  }
+  .blog__cards-carousel {
+    max-width: none;
   }
 }

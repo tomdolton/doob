@@ -78,35 +78,65 @@ include('handle_form.php');
     </div>
   </section>
 
-  <section class="gallery container">
-    <h3 class="gallery__title">See some of our Creative work.</h3>
-    <div class="gallery__carousel">
-      <img src="https://source.unsplash.com/369x279/?creative" alt="Project name" class="gallery__image" />
-      <img src="https://source.unsplash.com/369x279/?project" alt="Project name" class="gallery__image" />
-      <img src="https://source.unsplash.com/369x279/?make" alt="Project name" class="gallery__image" />
-      <img src="https://source.unsplash.com/369x279/?beautiful" alt="Project name" class="gallery__image" />
-      <img src="https://source.unsplash.com/369x279/?tech" alt="Project name" class="gallery__image" />
-      <img src="https://source.unsplash.com/369x279/?design" alt="Project name" class="gallery__image" />
+  <section class="gallery">
+    <div class="container">
+      <h3 class="gallery__title">See some of our Creative work.</h3>
+      <div class="gallery__carousel">
+        <img src="https://source.unsplash.com/369x279/?creative" alt="Project name" class="gallery__image" />
+        <img src="https://source.unsplash.com/369x279/?project" alt="Project name" class="gallery__image" />
+        <img src="https://source.unsplash.com/369x279/?make" alt="Project name" class="gallery__image" />
+        <img src="https://source.unsplash.com/369x279/?beautiful" alt="Project name" class="gallery__image" />
+        <img src="https://source.unsplash.com/369x279/?tech" alt="Project name" class="gallery__image" />
+        <img src="https://source.unsplash.com/369x279/?design" alt="Project name" class="gallery__image" />
+      </div>
+      <a href="#" class="gallery__link">See More of These.</a>
     </div>
-    <a href="#" class="gallery__link">See More of These.</a>
   </section>
 
-  <section class="blog container">
-    <h2 class="blog__title">Blog Stories</h2>
-    <h3 class="blog__subtitle">Check Our News</h3>
-    <div class="blog__card card card--large clearfix">
-      <h5 class="card__title--small">New Adventure</h5>
-      <p class="card__date">17 March 2019</p>
-      <p class="card--large__copy">
-        Vestibulum ac diam sit amet quam vehicula elementum amet est on dui.
-        Nulla porttitor accumsan tincidunt.
-      </p>
-      <a href="#" class="card__link">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="19px">
-          <path fill-rule="evenodd" fill="rgb(255, 57, 70)" d="M21.230,0.919 L19.816,2.334 L26.109,8.627 L0.885,8.627 L0.885,10.627 L25.820,10.627 L19.529,16.920 L20.943,18.335 L29.797,9.482 L21.230,0.919 Z" />
-        </svg>
-      </a>
+  <section class="blog">
+    <div class="container">
+
+      <h2 class="blog__title">Blog Stories</h2>
+      <h3 class="blog__subtitle">Check Our News</h3>
+
+      <div class="blog__cards-carousel">
+        <div class="blog__card card card--link clearfix">
+          <h5 class="card__title--small">New Adventure</h5>
+          <p class="card__date">17 March 2019</p>
+          <p class="card--link__copy">
+            Vestibulum ac diam sit amet quam vehicula elementum amet est on dui.
+            Nulla porttitor accumsan tincidunt.
+          </p>
+          <svg class="card__arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="19px">
+            <path fill-rule="evenodd" fill="rgb(255, 57, 70)" d="M21.230,0.919 L19.816,2.334 L26.109,8.627 L0.885,8.627 L0.885,10.627 L25.820,10.627 L19.529,16.920 L20.943,18.335 L29.797,9.482 L21.230,0.919 Z" />
+          </svg>
+        </div>
+        <div class="blog__card card card--link clearfix">
+          <h5 class="card__title--small">New Adventure</h5>
+          <p class="card__date">17 March 2019</p>
+          <p class="card--link__copy">
+            Vestibulum ac diam sit amet quam vehicula elementum amet est on dui.
+            Nulla porttitor accumsan tincidunt.
+          </p>
+          <svg class="card__arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="19px">
+            <path fill-rule="evenodd" fill="rgb(255, 57, 70)" d="M21.230,0.919 L19.816,2.334 L26.109,8.627 L0.885,8.627 L0.885,10.627 L25.820,10.627 L19.529,16.920 L20.943,18.335 L29.797,9.482 L21.230,0.919 Z" />
+          </svg>
+        </div>
+        <div class="blog__card card card--link clearfix">
+          <h5 class="card__title--small">New Adventure</h5>
+          <p class="card__date">17 March 2019</p>
+          <p class="card--link__copy">
+            Vestibulum ac diam sit amet quam vehicula elementum amet est on dui.
+            Nulla porttitor accumsan tincidunt.
+          </p>
+          <svg class="card__arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="19px">
+            <path fill-rule="evenodd" fill="rgb(255, 57, 70)" d="M21.230,0.919 L19.816,2.334 L26.109,8.627 L0.885,8.627 L0.885,10.627 L25.820,10.627 L19.529,16.920 L20.943,18.335 L29.797,9.482 L21.230,0.919 Z" />
+          </svg>
+        </div>
+      </div>
+
     </div>
+
   </section>
 
   <section class="contact container" id="contact">
@@ -131,8 +161,10 @@ include('handle_form.php');
         <div class="form__error"><?= htmlspecialchars($errors['message']); ?></div>
       </div>
 
-      <button class="form__btn btn" type="submit" name="submit" value="submit">Send Message</button>
-      <a href="messages.php" class="form__btn btn btn--secondary">View Messages</a>
+      <div class="form__links">
+        <button class="form__btn btn" type="submit" name="submit" value="submit">Send Message</button>
+        <a href="messages.php" class="form__btn btn btn--secondary">View Messages</a>
+      </div>
     </form>
 
   </section>

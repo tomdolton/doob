@@ -44,6 +44,15 @@
   color: $blue-dark;
 }
 
+.form__links {
+  max-width: 330px;
+  margin: 0 auto;
+}
+
+.form__btn:first-child {
+  margin-bottom: 1.5rem;
+}
+
 //
 // Medium screens
 // ==========================================================================
@@ -53,6 +62,15 @@
   .form__message,
   ::placeholder {
     font-size: 18px;
+  }
+
+  .form__links {
+    max-width: none;
+  }
+
+  .form__btn:first-child {
+    margin-bottom: 0;
+    margin-right: 1rem;
   }
 }
 
@@ -72,7 +90,7 @@
   }
 
   .form__message-wrapper,
-  .form__btn {
+  .form__links {
     grid-column: 1 / -1;
   }
 
@@ -80,8 +98,7 @@
     max-width: none;
   }
 
-  .form__btn {
-    width: 197px;
+  .form__links {
     justify-self: center;
   }
 }

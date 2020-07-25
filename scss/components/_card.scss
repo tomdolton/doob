@@ -2,57 +2,76 @@
 // Card component
 // -----------------------------------------------------------------------------
 
+//
+// Basic card styles
+// ==========================================================================
+
 .card {
   background: $white;
   box-shadow: $box-shadow;
   text-align: left;
-  padding: 2rem 2rem 3rem 2rem;
+  padding: 2.625rem;
   margin: 0 auto 2.5rem;
 }
 
 .card__image {
-  margin-bottom: 3rem;
+  margin-bottom: 3.3125rem;
 }
 
 .card__title {
+  margin-bottom: 2rem;
+}
+
+.card__title--small {
+  margin-bottom: 0.5rem;
 }
 
 .card__date {
   color: $grey;
   font-size: 14px;
-  margin-top: 1rem;
+  margin-bottom: 1.6875rem;
 }
 
 .card__copy {
   font-size: 14px;
   line-height: 23.5px;
-  margin-top: 1.5rem;
 }
 
-.card--large__copy {
+//
+// For Blog 'link' cards
+// ==========================================================================
+
+.card--link__copy {
   font-size: 18px;
-  margin-top: 2.5rem;
+  margin-bottom: 2.125rem;
 }
 
-.card__link {
-  display: block;
+.card__arrow {
   float: right;
-  margin-top: 2.5rem;
 }
 
-.card--large {
-  // transition: $transition;
+.card--link {
+  padding-top: 3rem;
 }
 
-.card--large:hover {
+.card--link:hover {
   cursor: pointer;
   background: $red;
   color: $white;
 
   & .card__title--small,
   & .card__date,
-  & .card__link path {
+  & .card__arrow path {
     color: white;
     fill: $white;
   }
+}
+
+//
+// For Messages cards
+// ==========================================================================
+
+.card__title--email {
+  color: $grey;
+  font-weight: 400;
 }
