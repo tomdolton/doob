@@ -5,6 +5,8 @@
 
   <!-- Work Sans font family -->
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Swiper stylesheet -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <!-- main stylesheet -->
   <link rel="stylesheet" href="css/main.min.css" />
 </head>

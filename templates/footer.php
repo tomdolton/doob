@@ -41,7 +41,8 @@
     </div>
   </div>
 </footer>
-
+<!-- Swiper CDN -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <!-- main scripts -->
 <script src="scripts/main.js" type="module"></script>
 </body>

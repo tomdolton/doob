@@ -12,23 +12,6 @@
   margin: 0 auto 3rem;
 }
 
-.gallery__image {
-  cursor: pointer;
-  width: 369px;
-  background: $grey;
-}
-
-.gallery__carousel {
-  display: grid;
-  gap: 30px;
-  justify-content: center;
-  margin-bottom: 3.5rem;
-}
-
-.gallery__link {
-  color: $red;
-}
-
 // Background pattern
 .gallery::after {
   content: url('../images/bg-shape-4.png');
@@ -36,6 +19,24 @@
   top: 70px;
   left: 0;
   z-index: -1;
+}
+
+.gallery__link {
+  color: $red;
+}
+
+//
+// Carousel styles
+// ==========================================================================
+
+.gallery__image {
+  cursor: pointer;
+  width: 369px;
+  background: $grey;
+}
+
+.swiper-container {
+  margin-bottom: 3.5rem;
 }
 
 //
@@ -47,22 +48,54 @@
     max-width: 400px;
   }
 
-  .gallery__carousel {
-    grid-template-columns: 1fr 1fr;
+  .gallery__carousel .swiper-slide {
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(auto, 369px));
   }
 }
 
 //
 // Large screens
 // ==========================================================================
-
 @media (min-width: $bp-large) {
   .gallery__title {
     text-align: left;
     margin-left: 0;
   }
 
-  .gallery__carousel {
-    grid-template-columns: 1fr 1fr 1fr;
+  .gallery__carousel .swiper-slide {
+    grid-template-columns: repeat(3, minmax(auto, 369px));
   }
+}
+
+// Swiper next/prev buttons
+// ==========================================================================
+
+//Buttons positioned relative to this
+.gallery .container {
+  position: relative;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 90px;
+}
+
+.swiper-button-next {
+  right: 32px;
+}
+
+.swiper-button-prev {
+  left: auto;
+  right: 82px;
+}
+
+.swiper-button-next::after {
+  content: url('../images/arrow-r.svg');
+}
+
+.swiper-button-prev::after {
+  content: url('../images/arrow-l.svg');
 }

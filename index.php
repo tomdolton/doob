@@ -81,14 +81,10 @@ include('handle_form.php');
   <section class="gallery">
     <div class="container">
       <h3 class="gallery__title">See some of our Creative work.</h3>
-      <div class="gallery__carousel">
-        <img src="https://source.unsplash.com/369x279/?creative" alt="Project name" class="gallery__image" />
-        <img src="https://source.unsplash.com/369x279/?project" alt="Project name" class="gallery__image" />
-        <img src="https://source.unsplash.com/369x279/?make" alt="Project name" class="gallery__image" />
-        <img src="https://source.unsplash.com/369x279/?beautiful" alt="Project name" class="gallery__image" />
-        <img src="https://source.unsplash.com/369x279/?tech" alt="Project name" class="gallery__image" />
-        <img src="https://source.unsplash.com/369x279/?design" alt="Project name" class="gallery__image" />
-      </div>
+      <!-- Slider main container -->
+      <div class="swiper-container"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
       <a href="#" class="gallery__link link--animated">See More of These.</a>
     </div>
   </section>
