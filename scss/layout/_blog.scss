@@ -12,7 +12,10 @@
 }
 
 .blog__card {
+  box-sizing: border-box;
+  width: 370px;
   max-width: 370px;
+  flex-grow: 0;
 }
 
 // Background pattern
@@ -24,26 +27,10 @@
   z-index: -1;
 }
 
-//
-// Large screens
+// Swiper next/prev buttons
 // ==========================================================================
 
-@media (min-width: $bp-large) {
-  .blog__cards-carousel {
-    @include flex();
-    flex-wrap: wrap;
-    gap: 1rem;
-    max-width: 756px;
-    margin: 0 auto;
-  }
-}
-
-// When screen is wide enough for three cards on same line
-@media (min-width: 1220px) {
-  .blog {
-    text-align: left;
-  }
-  .blog__cards-carousel {
-    max-width: none;
-  }
+.swiper-button-next--blog,
+.swiper-button-prev--blog {
+  top: 66px;
 }

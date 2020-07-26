@@ -41,6 +41,7 @@
 @media (min-width: $bp-medium) {
   .company__textbox {
     max-width: 530px;
+    text-align: left;
   }
 }
 
@@ -64,5 +65,31 @@
     top: -35px;
     width: 627px;
     max-width: 627px;
+  }
+}
+
+// Swiper next/prev buttons
+// ==========================================================================
+
+// //Buttons positioned relative to this
+// .gallery .container {
+//   position: relative;
+// }
+
+@media (min-width: $bp-medium) {
+  .swiper-button-next--company,
+  .swiper-button-prev--company {
+    top: auto;
+    bottom: 0;
+  }
+
+  .swiper-button-prev--company {
+    left: 0;
+    right: auto;
+  }
+
+  .swiper-button-next--company {
+    left: 50px;
+    right: auto;
   }
 }

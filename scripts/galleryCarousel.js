@@ -19,7 +19,7 @@ const GalleryCarousel = {
   },
 
   cacheDOM: function () {
-    this.carouselContainer = document.querySelector(".swiper-container");
+    this.carouselContainer = document.querySelector(".swiper--gallery");
   },
 
   bindEvents: function () {
@@ -129,17 +129,16 @@ const GalleryCarousel = {
   },
 
   renderCarouselHTML: function () {
-    console.log("render" + this.setWidth);
     this.carouselContainer.innerHTML = this.carouselHTML;
     // Init Swiper
-    const gallerySwiper = new Swiper('.swiper-container', {
+    const gallerySwiper = new Swiper('.swiper--gallery', {
       // Options
       slidesPerView: 1,
       spaceBetween: 10,
       // Navigation arrows
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next--gallery',
+        prevEl: '.swiper-button-prev--gallery',
       },
     })
   }

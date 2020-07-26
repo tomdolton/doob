@@ -19,22 +19,35 @@
   border: none;
   background: $blue-light;
   max-width: 570px;
+  margin: 0 auto;
 }
 
 .form__input {
   display: block;
   height: 60px;
-  margin: 0 auto 2.25rem;
 }
 
 .form__message {
   height: 120px;
   padding: 1rem;
-  margin: 0 auto 4rem;
+  margin: 0 auto;
 }
 
 .form__error {
   color: $red;
+  font-size: 14px;
+  position: absolute;
+  left: 1rem;
+  bottom: -1.15rem;
+}
+
+.form__group {
+  position: relative;
+  margin-bottom: 2.25rem;
+}
+
+.form__group--message {
+  margin-bottom: 4rem;
 }
 
 ::placeholder {
@@ -89,7 +102,7 @@
     column-gap: 2rem;
   }
 
-  .form__message-wrapper,
+  .form__group--message,
   .form__links {
     grid-column: 1 / -1;
   }

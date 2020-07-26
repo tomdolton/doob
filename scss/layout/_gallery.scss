@@ -78,24 +78,7 @@
   position: relative;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  top: 90px;
-}
-
-.swiper-button-next {
-  right: 32px;
-}
-
-.swiper-button-prev {
-  left: auto;
-  right: 82px;
-}
-
-.swiper-button-next::after {
-  content: url('../images/arrow-r.svg');
-}
-
-.swiper-button-prev::after {
-  content: url('../images/arrow-l.svg');
+.swiper-button-next--gallery,
+.swiper-button-prev--gallery {
+  top: 86px;
 }

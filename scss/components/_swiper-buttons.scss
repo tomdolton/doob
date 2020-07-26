@@ -1,0 +1,59 @@
+// -----------------------------------------------------------------------------
+// Swiper Buttons component modification
+// -----------------------------------------------------------------------------
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}
+
+.swiper-button-next {
+  right: 32px;
+}
+
+.swiper-button-prev {
+  left: auto;
+  right: 82px;
+}
+
+.swiper-button-next::after {
+  content: url('../images/arrow-r.svg');
+}
+
+.swiper-button-prev::after {
+  content: url('../images/arrow-l.svg');
+}
+
+//
+// Medium screens
+// ==========================================================================
+
+@media (min-width: $bp-medium) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: flex;
+  }
+
+  .swiper-button-next {
+    right: 64px;
+  }
+
+  .swiper-button-prev {
+    left: auto;
+    right: 114px;
+  }
+}
+
+//
+// Large screens
+// ==========================================================================
+
+@media (min-width: $bp-large) {
+  .swiper-button-next {
+    right: 32px;
+  }
+
+  .swiper-button-prev {
+    right: 82px;
+  }
+}
