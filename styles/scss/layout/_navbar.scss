@@ -11,8 +11,7 @@
   text-align: left;
 }
 
-.navbar__logo {
-  min-width: 69px;
+.navbar__logo--mobile {
   margin: 0 auto;
 }
 
@@ -67,12 +66,7 @@
 @media (min-width: $bp-large) {
   .navbar {
     display: block;
-
-    padding: 4rem 0;
-  }
-
-  .navbar__logo {
-    margin: 0 4.5rem 0 0;
+    padding: 3rem 0 4rem;
   }
 
   .navbar__logo--mobile {
@@ -81,6 +75,7 @@
 
   .navbar__logo--desktop {
     display: block;
+    margin: 0 4.5rem 0 0;
   }
 
   .navbar__inner {
@@ -126,17 +121,16 @@
     left: 0;
   }
 
-  .navbar__logo {
+  .navbar__logo--desktop {
     position: absolute;
     margin: 1rem 0 0;
     top: 0;
     left: -6vw;
-    // bottom: 0;
   }
 }
 
 @media (min-width: 1650px) {
-  .navbar__logo {
+  .navbar__logo--desktop {
     left: -9vw;
   }
 }

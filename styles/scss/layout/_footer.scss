@@ -4,8 +4,8 @@
 
 .footer {
   background: $blue-dark;
-  padding-top: 70px;
-  padding-bottom: 50px;
+  padding-top: 4.1875rem;
+  padding-bottom: 2.25rem;
 }
 
 .footer__title {
@@ -15,8 +15,12 @@
 
 .footer__subtitle {
   color: $red;
+  font-size: 32px;
   text-transform: uppercase;
   margin-bottom: 2rem;
+  @media (min-width: $bp-medium) {
+    font-size: 41px;
+  }
 }
 
 .footer__menu {
@@ -51,8 +55,5 @@
       fill: $red;
       transition: $transition;
     }
-  }
-
-  path {
   }
 }

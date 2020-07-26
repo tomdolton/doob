@@ -58,6 +58,10 @@ small {
   font-size: 14px;
 }
 
+//
+// Smaller screens reduce some font sizes
+// ==========================================================================
+
 @media (max-width: $bp-medium) {
   body {
     font-size: 15px;

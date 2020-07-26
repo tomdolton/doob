@@ -23,9 +23,7 @@ html {
   box-sizing: inherit;
 }
 
-/**
- * Reset default padding and margin on block elements
- */
+// Reset default padding and margin on block elements
 h1,
 h2,
 h3,
@@ -41,16 +39,14 @@ li {
 
 // 1. Prevent horizontal side scrolling on page
 body {
-  overflow-x: hidden; // 1. //
+  overflow-x: hidden; // 1 //
   text-align: center;
 }
 
-/**
- * Make images responsive
- * 1. Image will never scale up larger than its original size
- */
+// Make images responsive
+// 1. Image will never scale up larger than its original size
 img {
-  max-width: 100%; /* 1 */
+  max-width: 100%; // 1 //
   height: auto;
 }
 

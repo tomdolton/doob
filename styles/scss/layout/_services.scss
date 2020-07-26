@@ -23,9 +23,9 @@
 
 // Background pattern
 .services::after {
-  content: url('../images/bg-shape-2.png');
+  content: url('../../images/bg-shape-2.png');
   position: absolute;
-  top: -5px;
+  top: 10px;
   left: 0;
   z-index: -1;
 }
@@ -35,6 +35,10 @@
 // ==========================================================================
 
 @media (min-width: $bp-medium) {
+  .services {
+    padding-bottom: 10.5rem;
+  }
+
   .services .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -67,7 +71,7 @@
 @media (min-width: $bp-xlarge) {
   .services {
     text-align: left;
-    padding-bottom: 14rem;
+    padding-bottom: 14.625rem;
   }
 
   .services .container {

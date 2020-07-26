@@ -4,7 +4,7 @@
 
 .hero {
   padding-top: 4rem;
-  padding-bottom: 9rem;
+  padding-bottom: 8.5rem;
 }
 
 .hero__textbox {
@@ -31,7 +31,7 @@
 
 // Background pattern
 .hero::after {
-  content: url('../images/bg-shape-1.png');
+  content: url('../../images/bg-shape-1.png');
   position: absolute;
   top: 90px;
   right: 0;
@@ -60,7 +60,7 @@
   .hero {
     text-align: left;
     padding-top: 11.5rem;
-    padding-bottom: 24rem;
+    padding-bottom: 17.5rem;
   }
   .hero__inner {
     max-width: 555px;
@@ -78,7 +78,7 @@
     max-width: 680px;
   }
   .hero::after {
-    top: 40px;
+    top: 30px;
     right: 0;
   }
 }

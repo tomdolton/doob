@@ -1,11 +1,13 @@
+// Import mobile nav and gallery carousel and init
 import { Nav } from "./nav.js";
 import { GalleryCarousel } from "./GalleryCarousel.js"
-
 
 Nav.init();
 GalleryCarousel.init();
 
-var blogSwiper = new Swiper('.swiper--blog', {
+
+// Init swiper instance for blog section
+const blogSwiper = new Swiper('.swiper--blog', {
   // Options
   slidesPerView: 1,
   spaceBetween: 10,
@@ -30,10 +32,11 @@ var blogSwiper = new Swiper('.swiper--blog', {
       spaceBetween: 60,
     }
   }
-
 });
 
-var companySlider = new Swiper('.swiper--company', {
+
+// Init swiper instance for company section
+const companySlider = new Swiper('.swiper--company', {
   // Options
   slidesPerView: 1,
   spaceBetween: 32,
@@ -49,6 +52,5 @@ var companySlider = new Swiper('.swiper--company', {
     768: {
       grabCursor: false,
     },
-
   }
 });

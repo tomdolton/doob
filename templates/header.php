@@ -8,7 +8,7 @@
   <!-- Swiper stylesheet -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <!-- main stylesheet -->
-  <link rel="stylesheet" href="css/main.min.css" />
+  <link rel="stylesheet" href="./styles/css/main.min.css" />
 </head>
 
 <body>
@@ -19,10 +19,10 @@
       <span class="hamburger__line"></span>
       <span class="hamburger__line"></span>
     </button>
-    <img src="./images/logo.png" alt="Doob" class="navbar__logo navbar__logo--mobile" />
+    <img src="./images/logo.png" alt="Doob" class="navbar__logo--mobile" />
 
     <div class="container navbar__inner">
-      <img src="./images/logo.png" alt="Doob" class="navbar__logo navbar__logo--desktop" />
+      <img src="./images/logo.png" alt="Doob" class="navbar__logo--desktop" />
       <ul class="navbar__menu menu">
         <li class="menu__item">
           <a href="/" class="menu__link link--animated">Home.</a>

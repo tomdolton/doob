@@ -4,16 +4,15 @@
 
 .company {
   position: relative;
-  padding-bottom: 9rem;
+  padding-bottom: 5rem;
 }
 
 .company__textbox {
   max-width: 420px;
-  margin: 0 auto 4rem;
+  margin: 0 auto;
 }
 
-.company__subtitle,
-.company__copy {
+.company__subtitle {
   margin-bottom: 3rem;
 }
 
@@ -27,9 +26,9 @@
 
 // Background pattern
 .company::after {
-  content: url('../images/bg-shape-3.png');
+  content: url('../../images/bg-shape-3.png');
   position: absolute;
-  top: -300px;
+  top: -322px;
   right: 0;
   z-index: -1;
 }
@@ -39,9 +38,18 @@
 // ==========================================================================
 
 @media (min-width: $bp-medium) {
+  .company {
+    padding-bottom: 8rem;
+  }
+
   .company__textbox {
     max-width: 530px;
     text-align: left;
+    margin-bottom: 4rem;
+  }
+
+  .company__copy {
+    margin-bottom: 3rem;
   }
 }
 
@@ -52,11 +60,13 @@
 @media (min-width: $bp-large) {
   .company {
     text-align: left;
+    padding-bottom: 9.125rem;
   }
 
   .company__textbox {
-    margin-right: 0;
     max-width: 570px;
+    margin-right: 0;
+    margin-bottom: 4rem;
   }
 
   .company__image {
@@ -70,11 +80,6 @@
 
 // Swiper next/prev buttons
 // ==========================================================================
-
-// //Buttons positioned relative to this
-// .gallery .container {
-//   position: relative;
-// }
 
 @media (min-width: $bp-medium) {
   .swiper-button-next--company,

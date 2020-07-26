@@ -4,11 +4,15 @@
 
 .blog {
   position: relative;
-  padding-bottom: 10rem;
+  padding-bottom: 2.6875rem;
+
+  @media (min-width: $bp-large) {
+    text-align: left;
+  }
 }
 
 .blog__subtitle {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .blog__card {
@@ -20,9 +24,9 @@
 
 // Background pattern
 .blog::after {
-  content: url('../images/bg-shape-5.png');
+  content: url('../../images/bg-shape-5.png');
   position: absolute;
-  top: 140px;
+  top: -60px;
   right: 0;
   z-index: -1;
 }
@@ -33,4 +37,17 @@
 .swiper-button-next--blog,
 .swiper-button-prev--blog {
   top: 66px;
+}
+
+@media (min-width: $bp-medium) {
+  .blog__subtitle {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (min-width: $bp-medium) {
+  // Background pattern
+  .blog::after {
+    top: 142px;
+  }
 }

@@ -41,7 +41,6 @@ include('handle_form.php');
         </h3>
         <a href="#contact" class="services__btn btn btn--small">Get in Touch</a>
       </div>
-
       <div class="services__card card">
         <img src="./images/icon-design.png" alt="" class="card__image" />
         <h4 class="card__title">Web & Graphic Design</h4>
@@ -58,7 +57,6 @@ include('handle_form.php');
           Nulla porttitor accumsan tincidunt.
         </p>
       </div>
-
     </div>
   </section>
 
@@ -66,14 +64,13 @@ include('handle_form.php');
     <div class="company__inner container">
       <div class="company__textbox">
         <h2 class="company__title">Our Company</h2>
-
         <div class="swiper-container swiper--company">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <h3 class="company__subtitle">Some Fine <br /> Words About Us</h3>
               <p class="company__copy">
                 Vestibulum ac diam sit amet quam vehicula elementum amet est on
-                dui. Nulla porttitor accumsan tincidunt.Vestibulum ac diam sit
+                dui. Nulla porttitor accumsan tincidunt. Vestibulum ac diam sit
                 amet. <br /> Quam vehicula elementum amet est on dui. Nulla porttitor
                 accumsan tincidunt.
               </p>
@@ -98,11 +95,9 @@ include('handle_form.php');
               </p>
             </div>
           </div>
-          <!--  navigation buttons -->
           <div class="swiper-button-prev swiper-button-prev--company"></div>
           <div class="swiper-button-next swiper-button-next--company"></div>
         </div>
-
       </div>
       <img src="./images/illustration-2.png" alt="" class="company__image" />
     </div>
@@ -111,7 +106,6 @@ include('handle_form.php');
   <section class="gallery">
     <div class="container">
       <h3 class="gallery__title">See some of our Creative work.</h3>
-      <!-- Slider main container -->
       <div class="swiper-container swiper--gallery"></div>
       <div class="swiper-button-prev swiper-button-prev--gallery"></div>
       <div class="swiper-button-next swiper-button-next--gallery"></div>
@@ -121,13 +115,9 @@ include('handle_form.php');
 
   <section class="blog">
     <div class="container swiper-container swiper--blog">
-
       <h2 class="blog__title">Blog Stories</h2>
       <h3 class="blog__subtitle">Check Our News</h3>
-
-
       <div class="blog__cards-carousel swiper-wrapper">
-
         <div class="swiper-slide">
           <div class="blog__card card card--link clearfix">
             <h5 class="card__title--small">New Adventure 1</h5>
@@ -206,19 +196,14 @@ include('handle_form.php');
             </svg>
           </div>
         </div>
-
-
-
       </div>
-      <!-- Navigation buttons -->
       <div class="swiper-button-prev swiper-button-prev--blog"></div>
       <div class="swiper-button-next swiper-button-next--blog"></div>
-
     </div>
-
   </section>
 
   <?php include('templates/contact.php'); ?>
+
 </main>
 
 <?php include('templates/footer.php'); ?>
